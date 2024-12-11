@@ -9461,6 +9461,7 @@
 #include "modular_zzbluemoon\code\modules\admin\player_panel.dm"
 #include "modular_zzbluemoon\code\modules\admin\playtimes.dm"
 #include "modular_zzbluemoon\code\modules\admin\transform.dm"
+#include "modular_zzbluemoon\code\modules\alternative_job_titles\code\alt_job_titles.dm"
 #include "modular_zzbluemoon\code\modules\barks\bark_list.dm"
 #include "modular_zzbluemoon\code\modules\cargo\packs\general.dm"
 #include "modular_zzbluemoon\code\modules\client\click.dm"
