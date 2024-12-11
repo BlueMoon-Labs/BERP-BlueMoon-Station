@@ -42,7 +42,7 @@ ADMIN_VERB(cmd_admin_check_player_exp, R_ADMIN, "Player Playtime", "View player 
 		to_chat(user, span_warning("Tracking is disabled in the server configuration file."), confidential = TRUE)
 		return
 
-	//BLUEMOON EDIT START: Modern Player Playtime Check
+	// BLUEMOON EDIT START: Modern Player Playtime Check
 	new /datum/player_playtime(usr)
 	/*
 	var/list/msg = list()
@@ -52,7 +52,7 @@ ADMIN_VERB(cmd_admin_check_player_exp, R_ADMIN, "Player Playtime", "View player 
 	msg += "</UL></BODY></HTML>"
 	user << browse(msg.Join(), "window=Player_playtime_check")
 	*/
-	//BLUEMOON EDIT END: Modern Player Playtime Check
+	// BLUEMOON EDIT END: Modern Player Playtime Check
 
 /client/proc/trigger_centcom_recall()
 	if(!check_rights(R_ADMIN))

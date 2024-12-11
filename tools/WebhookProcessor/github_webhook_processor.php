@@ -48,7 +48,10 @@ $game_announce_whitelist = array(
 	"tgstation",
 	"TerraGov-Marine-Corps",
 	// ORIGINAL END - SKYRAT EDIT: */
-	"Skyrat-tg",
+	// BLUEMOON EDIT - our repo
+	//"Skyrat-tg",
+	"BERP-BlueMoon-Station",
+	// BLUEMOON EDIT END
 );
 
 // Any repository that matches in this blacklist will not appear on Discord.
@@ -399,7 +402,7 @@ function handle_pr($payload) {
 	if (!is_blacklisted($discord_announce_blacklist, $repo_name)) {
 		discord_announce($action, $payload, $pr_flags);
 	}
-	
+
 	if (in_array($repo_name, $game_announce_whitelist)) {
 		game_announce($action, $payload, $pr_flags);
 	}
