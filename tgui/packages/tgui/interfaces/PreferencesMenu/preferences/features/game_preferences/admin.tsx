@@ -53,3 +53,12 @@ export const comms_notification: FeatureToggle = {
   category: 'ADMIN',
   component: CheckboxInput,
 };
+
+// BLUEMOON EDIT START: Modern Player Panel
+export const use_tgui_player_panel: FeatureToggle = {
+  name: 'Use modern player panel',
+  category: 'ADMIN',
+  description: 'Whether to use the new TGUI player panel or the old HTML one.',
+  component: CheckboxInput,
+};
+// BLUEMOON EDIT END: Modern Player Panel

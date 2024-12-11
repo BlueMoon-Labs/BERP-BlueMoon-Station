@@ -14,11 +14,12 @@ type Props = Partial<{
   open: boolean;
   title: ReactNode;
   icon: string;
+  disabled: boolean; // BLUEMOON EDIT: Modern Player Panel
 }> &
   BoxProps;
 
 export function Collapsible(props: Props) {
-  const { children, color, title, buttons, icon, ...rest } = props;
+  const { children, color, title, buttons, icon, disabled, ...rest } = props; // BLUEMOON EDIT: Modern Player Panel  //const { children, color, title, buttons, icon, ...rest } = props;
   const [open, setOpen] = useState(props.open);
 
   return (
@@ -29,6 +30,7 @@ export function Collapsible(props: Props) {
             fluid
             color={color}
             icon={icon ? icon : open ? 'chevron-down' : 'chevron-right'}
+            disabled={disabled} // BLUEMOON EDIT: Modern Player Panel
             onClick={() => setOpen(!open)}
             {...rest}
           >
@@ -39,7 +41,12 @@ export function Collapsible(props: Props) {
           <div className="Table__cell Table__cell--collapsing">{buttons}</div>
         )}
       </div>
-      {open && <Box mt={1}>{children}</Box>}
+      {open &&
+        // BLUEMOON EDIT: Modern Player Panel
+        !disabled && (
+          // BLUEMOON EDIT: Modern Player Panel
+          <Box mt={1}>{children}</Box>
+        )}
     </Box>
   );
 }
