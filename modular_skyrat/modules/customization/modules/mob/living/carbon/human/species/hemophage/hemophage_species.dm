@@ -130,6 +130,8 @@
 								having to expend any blood to maintain minimal bodily functions \
 								so long as their host remains stationary in said locker.",
 		),
+		// SPLURT EDIT - REMOVAL
+		/*
 		list(
 			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 			SPECIES_PERK_ICON = "biohazard",
@@ -138,6 +140,8 @@
 								other viruses and don't actually require an external source of oxygen \
 								to stay alive.",
 		),
+		*/
+		// SPLURT EDIT END
 		list(
 			SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
 			SPECIES_PERK_ICON = "tint",
