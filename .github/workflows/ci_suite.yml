@@ -98,7 +98,7 @@ jobs:
           bash tools/ci/check_grep.sh
           bash skyrat/tools/skyrat_check_grep.sh # SKYRAT EDIT ADDITION - checking modular_skyrat code
           bash modular_zubbers/tools/ci/zubbers_check_grep.sh # BUBBER EDIT ADDITION - checking modular_zubbers code
-          bash modular_bluemoon/tools/ci/bluemoon_check_grep.sh # BLUEMOON EDIT ADDITION - checking modular_bluemoon code
+          bash modular_zzbluemoon/tools/ci/bluemoon_check_grep.sh # BLUEMOON EDIT ADDITION - checking modular_zzbluemoon code
       - name: Ticked File Enforcement
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: |

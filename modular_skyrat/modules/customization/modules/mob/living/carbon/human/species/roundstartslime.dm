@@ -318,8 +318,13 @@
 				alterer.remove_quirk(/datum/quirk/oversized)
 
 			new_body_size = new_body_size * 0.01
+			// BLUEMOON EDIT CHANGE - Sizecode
+			/*
 			alterer.dna.features["body_size"] = new_body_size
 			alterer.dna.update_body_size()
+			*/
+			alterer.update_size(new_body_size)
+			// BLUEMOON EDIT CHANGE END
 
 		if("Genitals")
 			alter_genitals(alterer)
