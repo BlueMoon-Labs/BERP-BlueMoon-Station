@@ -28,7 +28,13 @@ Space Station 13 is a paranoia-laden round-based roleplaying game set against th
 - The BlueMoon main repository is maintained by and contributed to by volunteers and hobbiests. You are not entitled to our time and energy. We reserve the right to permanently remove anyone who does not show both our contributor's and maintainer's common decency.
 - BlueMoon does not operate a strict "goodboy" points system or have defined goals, and anyone is welcome to contribute to this project. That being said, the maintainers of this project are free to curate comments as seen fit to uphold a respectful environment.
 
-**2. The Licensing is Non-negotiable**
+**2. Modularization Standards Will be Upheld**
+- This codebase is a active downstream to Bubberstation with frequent upstream merges.
+- Modularization must be strictly upheld for code stability. (Ask a maintainer if you have any questions!)
+- Basically, **try to edit Modular BlueMoon files first** Then //BLUEMOON EDIT comments on any core files (TG, Skyrat, or Bubberstation) for trackability.
+- This is a place for when more concrete guidelines are created.
+
+**3. The Licensing is Non-negotiable**
 - You are free to take, redistribute, modify, and readapt any code or commit found on this repository.
 - All code files are under **GNU AGPL V3**
 - All asset files (images and sound) are **CC-BY-SA 3.0** unless otherwise stated
