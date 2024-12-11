@@ -1,5 +1,5 @@
 /datum/sprite_accessory/genital/butt
-	icon = 'modular_zzplurt/icons/mob/human/genitals/butt.dmi'
+	icon = 'modular_zzbluemoon/icons/mob/human/genitals/butt.dmi'
 	organ_type = /obj/item/organ/external/genital/butt
 	associated_organ_slot = ORGAN_SLOT_BUTT
 	key = ORGAN_SLOT_BUTT
@@ -20,7 +20,7 @@
 
 
 /datum/sprite_accessory/genital/anus
-	icon = 'modular_zzplurt/icons/mob/human/genitals/anus.dmi'
+	icon = 'modular_zzbluemoon/icons/mob/human/genitals/anus.dmi'
 	organ_type = /obj/item/organ/external/genital/anus
 	associated_organ_slot = ORGAN_SLOT_BUTT // :3
 	key = ORGAN_SLOT_ANUS
@@ -41,7 +41,7 @@
 
 
 /datum/sprite_accessory/genital/belly
-	icon = 'modular_zzplurt/icons/mob/human/genitals/belly.dmi'
+	icon = 'modular_zzbluemoon/icons/mob/human/genitals/belly.dmi'
 	organ_type = /obj/item/organ/external/genital/belly
 	associated_organ_slot = ORGAN_SLOT_BELLY
 	key = ORGAN_SLOT_BELLY

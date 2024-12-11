@@ -37,7 +37,7 @@
 
 		var/target_overlay = undies.icon_state
 		var/mutable_appearance/underwear_overlay
-		var/icon_file = 'modular_zzplurt/icons/mob/clothing/underwear.dmi'
+		var/icon_file = 'modular_zzbluemoon/icons/mob/clothing/underwear.dmi'
 		var/handled_by_bodyshape = TRUE
 		var/digi
 		var/woman
@@ -110,7 +110,7 @@
 
 		var/target_overlay = undershirt.icon_state
 		var/mutable_appearance/shirt_overlay
-		var/icon_file = 'modular_zzplurt/icons/mob/clothing/underwear.dmi'
+		var/icon_file = 'modular_zzbluemoon/icons/mob/clothing/underwear.dmi'
 		var/handled_by_bodyshape = TRUE
 		var/digi
 		var/woman
@@ -184,7 +184,7 @@
 
 		var/target_overlay = bra.icon_state
 		var/mutable_appearance/bra_overlay
-		var/icon_file = 'modular_zzplurt/icons/mob/clothing/underwear.dmi'
+		var/icon_file = 'modular_zzbluemoon/icons/mob/clothing/underwear.dmi'
 		var/handled_by_bodyshape = TRUE
 		var/digi
 		var/woman
@@ -256,7 +256,7 @@
 		if(wrists_hidden())
 			return
 
-		var/icon_file = 'modular_zzplurt/icons/mob/clothing/wrists.dmi'
+		var/icon_file = 'modular_zzbluemoon/icons/mob/clothing/wrists.dmi'
 
 		// SKYRAT EDIT ADDITION
 		var/mutant_override = FALSE
@@ -381,6 +381,20 @@
 	apply_overlay(SOCKS_LAYER)
 
 	update_body_parts()
+
+// Function for updating back sprites
+/mob/living/carbon/human/update_worn_back()
+	. = ..()
+
+	// Check for hidden backpack trait
+	if(HAS_TRAIT(src, TRAIT_HIDE_BACKPACK))
+		// Define back overlays
+		var/mutable_appearance/back_overlay = overlays_standing[BACK_LAYER]
+
+		// Check for existing overlay
+		if(back_overlay)
+			// Remove overlays
+			remove_overlay(BACK_LAYER)
 
 /mob/living/carbon/human/proc/update_hud_shirt(obj/item/worn_item)
 	worn_item.screen_loc = ui_shirt

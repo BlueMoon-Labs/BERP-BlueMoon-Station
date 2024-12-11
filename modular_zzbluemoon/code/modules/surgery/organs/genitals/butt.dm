@@ -1,7 +1,7 @@
 /obj/item/organ/external/genital/butt
 	name = "butt"
 	desc = "You see a pair of asscheeks."
-	icon = 'modular_zzplurt/icons/obj/medical/organs/butt.dmi'
+	icon = 'modular_zzbluemoon/icons/obj/medical/organs/butt.dmi'
 	icon_state = "butt"
 	slot = ORGAN_SLOT_BUTT
 	zone = BODY_ZONE_PRECISE_GROIN

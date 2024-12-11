@@ -188,7 +188,7 @@
 				default_icon = 'icons/mob/clothing/underwear.dmi'
 			if(ITEM_SLOT_WRISTS)
 				default_layer = WRISTS_LAYER
-				//default_icon = 'modular_zzplurt/icons/mob/clothing/wrists.dmi' //No wrists icon yet
+				//default_icon = 'modular_zzbluemoon/icons/mob/clothing/wrists.dmi' //No wrists icon yet
 			// SPLURT EDIT END
 		. += worn_item.build_worn_icon(default_layer, default_icon, female_uniform = female_icon)
 
