@@ -6589,6 +6589,7 @@
 #include "modular_bluemoon\code\modules\admin\player_panel.dm"
 #include "modular_bluemoon\code\modules\admin\playtimes.dm"
 #include "modular_bluemoon\code\modules\admin\transform.dm"
+#include "modular_bluemoon\code\modules\barks\bark_list.dm"
 #include "modular_bluemoon\code\modules\client\click.dm"
 #include "modular_bluemoon\code\modules\client\client_procs.dm"
 #include "modular_bluemoon\code\modules\client\preferences\mutant_parts.dm"
