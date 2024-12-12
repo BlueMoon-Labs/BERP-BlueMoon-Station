@@ -1,4 +1,4 @@
-// SPLURT EDIT - Extra inventory
+// BLUEMOON EDIT - Extra inventory
 
 GLOBAL_LIST_INIT(extra_inventory_ui_styles, list(
 	'icons/hud/screen_midnight.dmi' = 'modular_zzbluemoon/icons/hud/screen_midnight.dmi',

@@ -19,7 +19,7 @@ GLOBAL_LIST_INIT(breast_size_translation, list(
 	"14" = BREAST_SIZE_N,
 	"15" = BREAST_SIZE_O,
 	"16" = BREAST_SIZE_P,
-	//splurt sizes here
+	// BLUEMOON sizes here
 	"17" = BREAST_SIZE_R,
 	"18" = BREAST_SIZE_S,
 	"19" = BREAST_SIZE_T,
@@ -43,13 +43,13 @@ GLOBAL_LIST_INIT(breast_size_to_number, list(
 	BREAST_SIZE_N = 14,
 	BREAST_SIZE_O = 15,
 	BREAST_SIZE_P = 16,
-	//splurt sizes here
+	// BLUEMOON sizes here
 	BREAST_SIZE_R = 17,
 	BREAST_SIZE_S = 18,
 	BREAST_SIZE_T = 19,
 	))
 
-//SPLURT EDIT START
+// BLUEMOON EDIT START
 /*
 GLOBAL_LIST_INIT(balls_size_translation, list(
 	"0" = "Small",
@@ -72,7 +72,7 @@ GLOBAL_LIST_INIT(balls_size_translation, list(
 	"7" = "Gargantuan",
 	"8" = "Colossal"
 	))
-//SPLURT EDIT END
+// BLUEMOON EDIT END
 
 GLOBAL_LIST_INIT(marking_zone_to_bitflag, list(
 	BODY_ZONE_HEAD = HEAD,
@@ -96,7 +96,7 @@ GLOBAL_LIST_INIT(marking_zones, list(
 	BODY_ZONE_PRECISE_R_HAND,
 	))
 
-//SPLURT EDIT START
+// BLUEMOON EDIT START
 /*
 GLOBAL_LIST_INIT(preference_balls_sizes, list(
 	"Small",

@@ -42,13 +42,13 @@
 		ITEM_SLOT_OCLOTHING,
 		ITEM_SLOT_GLOVES,
 		ITEM_SLOT_FEET,
-		// SPLURT EDIT ADDITION - Extra Inventory
+		// BLUEMOON EDIT ADDITION - Extra Inventory
 		ITEM_SLOT_UNDERWEAR,
 		ITEM_SLOT_SOCKS,
 		ITEM_SLOT_SHIRT,
 		ITEM_SLOT_BRA,
 		ITEM_SLOT_WRISTS,
-		// SPLURT EDIT END
+		// BLUEMOON EDIT END
 	)
 	/// Assoc list of all item slots (turned to strings) to the items they hold.
 	var/list/worn_items = list()
@@ -173,7 +173,7 @@
 			if(ITEM_SLOT_FEET)
 				default_layer = SHOES_LAYER
 				default_icon = DEFAULT_SHOES_FILE
-			// SPLURT EDIT ADDITION - Extra Inventory
+			// BLUEMOON EDIT ADDITION - Extra Inventory
 			if(ITEM_SLOT_UNDERWEAR)
 				default_layer = UNDERWEAR_LAYER
 				default_icon = 'icons/mob/clothing/underwear.dmi'
@@ -189,7 +189,7 @@
 			if(ITEM_SLOT_WRISTS)
 				default_layer = WRISTS_LAYER
 				//default_icon = 'modular_zzbluemoon/icons/mob/clothing/wrists.dmi' //No wrists icon yet
-			// SPLURT EDIT END
+			// BLUEMOON EDIT END
 		. += worn_item.build_worn_icon(default_layer, default_icon, female_uniform = female_icon)
 
 /* SPLURT EDIT REMOVAL - Extra Inventory

@@ -680,7 +680,7 @@
 	if(!is_mouth_covered() && clean_lips())
 		. = TRUE
 
-	// SPLURT EDIT - Extra inventory
+	// BLUEMOON EDIT - Extra inventory
 	if(!underwear_hidden() && w_underwear?.wash(clean_types))
 		update_worn_underwear()
 		. = TRUE

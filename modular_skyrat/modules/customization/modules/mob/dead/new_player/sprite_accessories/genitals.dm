@@ -23,7 +23,7 @@
 			if(istype(target_mob.wear_suit, /obj/item/clothing/suit/toggle/labcoat/hospitalgown))
 				return TRUE
 
-			// SPLURT EDIT - Extra Inventory
+			// BLUEMOON EDIT - Extra Inventory
 			/*
 			//Are they wearing an Undershirt?
 			if(target_mob.undershirt != "Nude" && !(target_mob.underwear_visibility & UNDERWEAR_HIDE_SHIRT))
@@ -76,7 +76,7 @@
 
 			//Nothing they're wearing will cover them
 			return FALSE
-			//SPLURT EDIT END
+			// BLUEMOON EDIT END
 		//If not always shown or hidden by clothes, then it defaults to always hidden
 		else
 			return TRUE

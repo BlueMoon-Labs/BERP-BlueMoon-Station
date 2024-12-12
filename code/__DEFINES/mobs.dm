@@ -745,7 +745,7 @@ GLOBAL_LIST_INIT(human_heights_to_offsets, list(
 #define SHOES_LAYER 23 // BLUEMOON EDIT: Extra inventory - ORIGINAL: 22
 /// Layer for masks that are worn below ears and eyes (like Balaclavas) (layers below hair, use flagsinv=HIDEHAIR as needed)
 #define LOW_FACEMASK_LAYER 22 // BLUEMOON EDIT: Extra inventory - ORIGINAL: 21
-/// SPLURT EDIT - Extra ears layer
+/// BLUEMOON EDIT - Extra ears layer
 #define EARS_EXTRA_LAYER 21 // BLUEMOON EDIT: Extra inventory
 /// Ears layer (Spessmen have ears? Wow)
 #define EARS_LAYER 20

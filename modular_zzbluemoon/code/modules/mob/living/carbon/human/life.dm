@@ -1,6 +1,6 @@
 /mob/living/carbon/human/get_heat_protection_flags(temperature)
 	. = ..()
-	// SPLURT EDIT - Extra inventory
+	// BLUEMOON EDIT - Extra inventory
 	if(w_underwear)
 		if(w_underwear.max_heat_protection_temperature && w_underwear.max_heat_protection_temperature >= temperature)
 			. |= w_underwear.heat_protection

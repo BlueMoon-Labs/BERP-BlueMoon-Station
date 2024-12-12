@@ -209,7 +209,7 @@
 	if(measured_size < 1)
 		measured_size = 1
 	switch(measured_size)
-	//SPLURT EDIT START
+	// BLUEMOON EDIT START
 	/*
 		if(1 to 8)
 			size_affix = "1"
@@ -230,7 +230,7 @@
 			size_affix = "4"
 		else
 			size_affix = "5"
-	//SPLURT EDIT END
+	// BLUEMOON EDIT END
 	var/passed_string = "[genital_type]_[size_affix]_[is_erect]"
 	if(uses_skintones)
 		passed_string += "_s"
@@ -473,7 +473,7 @@
 	icon_state = passed_string
 
 /obj/item/organ/external/genital/breasts/get_sprite_size_string()
-	//SPLURT EDIT START
+	// BLUEMOON EDIT START
 	/*
 	var/max_size = 5
 	if(genital_type == "pair")
@@ -485,7 +485,7 @@
 		current_size = max_size
 	*/
 	var/current_size = clamp(floor(genital_size), 0, 19)
-	//SPLURT EDIT END
+	// BLUEMOON EDIT END
 	var/passed_string = "[genital_type]_[current_size]"
 	if(uses_skintones)
 		passed_string += "_s"

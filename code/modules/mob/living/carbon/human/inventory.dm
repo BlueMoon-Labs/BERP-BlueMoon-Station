@@ -27,7 +27,7 @@
 			return belt
 		if(ITEM_SLOT_ID)
 			return wear_id
-		if(ITEM_SLOT_EARS_LEFT) // SPLURT EDIT - Extra inventory
+		if(ITEM_SLOT_EARS_LEFT) // BLUEMOON EDIT - Extra inventory
 			return ears
 		if(ITEM_SLOT_EYES)
 			return glasses
@@ -59,7 +59,7 @@
 		return ITEM_SLOT_ID
 
 	if(looking_for == ears)
-		return ITEM_SLOT_EARS_LEFT // SPLURT EDIT - Extra inventory
+		return ITEM_SLOT_EARS_LEFT // BLUEMOON EDIT - Extra inventory
 
 	if(looking_for == glasses)
 		return ITEM_SLOT_EYES
@@ -68,7 +68,7 @@
 		return ITEM_SLOT_GLOVES
 
 	if(looking_for == wrists)
-		return ITEM_SLOT_WRISTS // SPLURT EDIT - Extra inventory
+		return ITEM_SLOT_WRISTS // BLUEMOON EDIT - Extra inventory
 
 	if(looking_for == head)
 		return ITEM_SLOT_HEAD
@@ -101,7 +101,7 @@
 		legcuffed,
 		wear_suit,
 		gloves,
-		wrists, // SPLURT EDIT - Extra inventory
+		wrists, // BLUEMOON EDIT - Extra inventory
 		shoes,
 		belt,
 		wear_id,
@@ -154,12 +154,12 @@
 			wear_id = equipping
 			sec_hud_set_ID()
 			update_worn_id()
-		if(ITEM_SLOT_EARS_LEFT) // SPLURT EDIT - Extra inventory
+		if(ITEM_SLOT_EARS_LEFT) // BLUEMOON EDIT - Extra inventory
 			if(ears)
 				return
 			ears = equipping
 			update_worn_ears()
-		// SPLURT EDIT - Extra inventory
+		// BLUEMOON EDIT - Extra inventory
 		if(ITEM_SLOT_EARS_RIGHT)
 			if(ears_extra)
 				return
@@ -185,7 +185,7 @@
 				update_mob_action_buttons()
 			//SKYRAT EDIT ADDITION END
 			update_worn_gloves()
-		// SPLURT EDIT - Extra inventory
+		// BLUEMOON EDIT - Extra inventory
 		if(ITEM_SLOT_WRISTS)
 			if(wrists)
 				return
@@ -214,7 +214,7 @@
 			w_uniform = equipping
 			update_suit_sensors()
 			update_worn_undersuit()
-		// SPLURT EDIT - Extra inventory
+		// BLUEMOON EDIT - Extra inventory
 		if(ITEM_SLOT_UNDERWEAR)
 			if(w_underwear)
 				return
@@ -296,7 +296,7 @@
 				dropItemToGround(wear_id)
 			if(belt && !can_equip(belt, ITEM_SLOT_BELT, TRUE, ignore_equipped = TRUE))
 				dropItemToGround(belt)
-	// SPLURT EDIT - Extra inventory
+	// BLUEMOON EDIT - Extra inventory
 	else if(I == w_underwear)
 		w_underwear = null
 		if(!QDELETED(src))
@@ -339,7 +339,7 @@
 		ears = null
 		if(!QDELETED(src))
 			update_worn_ears()
-	// SPLURT EDIT - Extra inventory
+	// BLUEMOON EDIT - Extra inventory
 	else if(I == ears_extra)
 		ears_extra = null
 		if(!QDELETED(src))

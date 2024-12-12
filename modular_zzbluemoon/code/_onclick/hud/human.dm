@@ -3,7 +3,7 @@
 	var/atom/movable/screen/using
 	var/atom/movable/screen/inventory/inv_box
 
-	// SPLURT EDIT - Extra inventory
+	// BLUEMOON EDIT - Extra inventory
 	using = new /atom/movable/screen/human/toggle/extra(null, src)
 	using.icon = extra_inventory_ui_style(ui_style)
 	using.screen_loc = ui_inventory_extra

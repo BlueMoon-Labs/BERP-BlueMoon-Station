@@ -45,7 +45,7 @@ GLOBAL_LIST_INIT_TYPED(quirk_blacklist, /list/datum/quirk, list(
 	list(/datum/quirk/overweight, /datum/quirk/obese),
 	list(/datum/quirk/dominant_aura, /datum/quirk/well_trained),
 	//BUBBER EDIT ADDITION END
-	//SPLURT EDIT ADDITION BEGIN
+	// BLUEMOON EDIT ADDITION BEGIN
 
 	// Hallowed is a direct foil to both quirks.
 	// Causes a conflict with Holy Water effects.
@@ -92,7 +92,7 @@ GLOBAL_LIST_INIT_TYPED(quirk_blacklist, /list/datum/quirk, list(
 	list(/datum/quirk/item_quirk/addict/junkie, /datum/quirk/concubus),
 	list(/datum/quirk/item_quirk/addict/smoker, /datum/quirk/item_quirk/bloodfledge),
 	list(/datum/quirk/item_quirk/addict/smoker, /datum/quirk/concubus),
-	//SPLURT EDIT ADDITION END
+	// BLUEMOON EDIT ADDITION END
 ))
 
 GLOBAL_LIST_INIT(quirk_string_blacklist, generate_quirk_string_blacklist())

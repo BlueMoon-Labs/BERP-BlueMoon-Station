@@ -99,7 +99,7 @@
 	type_to_check = /datum/preference/choiced/genital/anus
 	skin_color_type = /datum/preference/toggle/genital_skin_color/anus
 
-//SPLURT EDIT START
+// BLUEMOON EDIT START
 // BELLY (yes it HAS to be here)
 /datum/preference/choiced/genital/belly
 	savefile_key = "feature_belly"
@@ -159,4 +159,4 @@
 	relevant_mutant_bodypart = ORGAN_SLOT_BELLY
 	type_to_check = /datum/preference/choiced/genital/belly
 	skin_color_type = /datum/preference/toggle/genital_skin_color/belly
-//SPLURT EDIT END
+// BLUEMOON EDIT END

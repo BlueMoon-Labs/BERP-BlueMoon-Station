@@ -137,7 +137,7 @@ GLOBAL_LIST_EMPTY(customizable_races)
 				standing += eye_organ.generate_body_overlay(species_human)
 
 	//Underwear, Undershirts & Socks
-	//SPLURT EDIT REMOVAL - Extra Inventory - Moved to modular
+	// BLUEMOON EDIT REMOVAL - Extra Inventory - Moved to modular
 	/*
 	if(!HAS_TRAIT(species_human, TRAIT_NO_UNDERWEAR))
 		if(species_human.underwear && !(species_human.underwear_visibility & UNDERWEAR_HIDE_UNDIES))
@@ -192,7 +192,7 @@ GLOBAL_LIST_EMPTY(customizable_races)
 					socks_overlay.color = species_human.socks_color
 				standing += socks_overlay
 	*/
-	//SPLURT EDIT END
+	// BLUEMOON EDIT END
 
 	if(standing.len)
 		species_human.overlays_standing[BODY_LAYER] = standing

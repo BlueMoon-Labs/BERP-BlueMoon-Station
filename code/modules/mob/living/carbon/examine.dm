@@ -485,7 +485,7 @@
 	//head
 	if(head && !(obscured & ITEM_SLOT_HEAD) && !(head.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [head.examine_title_worn(user)] on [t_his] head."
-	// SPLURT EDIT - socks
+	// BLUEMOON EDIT - socks
 	if(w_socks && !socks_hidden() && !(w_socks.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [w_socks.examine_title_worn(user)] on [t_his] feet."
 	//mask
@@ -506,11 +506,11 @@
 	if(ears && !(obscured & ITEM_SLOT_EARS_LEFT) && !(ears.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_has] [ears.examine_title_worn(user)] on [t_his] left ear." // extra inventory
 
-	// SPLURT EDIT - ears extra
+	// BLUEMOON EDIT - ears extra
 	if(ears_extra && !(obscured & ITEM_SLOT_EARS_RIGHT) && !(ears_extra.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_has] [ears_extra.examine_title_worn(user)] on [t_his] right ear."
 
-	// SPLURT EDIT - ears extra
+	// BLUEMOON EDIT - ears extra
 	//wearing two ear items makes you look like an idiot
 	if((istype(ears, /obj/item/radio/headset) && !(obscured & ITEM_SLOT_EARS_LEFT) && !(ears.item_flags & EXAMINE_SKIP)) && (istype(ears_extra, /obj/item/radio/headset) && !(obscured & ITEM_SLOT_EARS_RIGHT) && !(ears_extra.item_flags & EXAMINE_SKIP)))
 		. += span_warning("[t_He] looks quite tacky wearing both \an [ears.name] and \an [ears_extra.name] on [t_his] head.")
@@ -545,7 +545,7 @@
 	else if(GET_ATOM_BLOOD_DNA_LENGTH(src) || blood_in_hands)
 		if(num_hands)
 			. += span_warning("[t_He] [t_has] [num_hands > 1 ? "" : "a "]blood-stained hand[num_hands > 1 ? "s" : ""]!")
-	// SPLURT EDIT - wrists
+	// BLUEMOON EDIT - wrists
 	if(wrists && !wrists_hidden() && !(wrists.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [wrists.examine_title_worn(user)]."
 	//handcuffed?

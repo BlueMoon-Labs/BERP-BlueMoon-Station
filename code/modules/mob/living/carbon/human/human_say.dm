@@ -79,7 +79,7 @@
 	if(.)
 		return
 
-	//SPLURT EDIT - Extra inventory
+	// BLUEMOON EDIT - Extra inventory
 	if(message_mods[MODE_HEADSET])
 		if(ears && ears.talk_into(src, message, , spans, language, message_mods))
 			return ITALICS | REDUCE_RANGE

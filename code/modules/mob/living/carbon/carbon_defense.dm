@@ -345,14 +345,14 @@
 
 		if(HAS_TRAIT(src, TRAIT_BADTOUCH))
 			to_chat(helper, span_warning("[src] looks visibly upset as you pat [p_them()] on the head."))
-			src.badtouch_retaliate(helper) // SPLURT EDIT - Distant
+			src.badtouch_retaliate(helper) // BLUEMOON EDIT - Distant
 		//SKYRAT EDIT ADDITION BEGIN - EMOTES
 		if(HAS_TRAIT(src, TRAIT_EXCITABLE))
 			var/obj/item/organ/external/tail/src_tail = get_organ_slot(ORGAN_SLOT_EXTERNAL_TAIL)
 			if(src_tail && !(src_tail.wag_flags & WAG_WAGGING))
 				emote("wag")
 		//SKYRAT EDIT ADDITION END
-		// SPLURT EDIT BEGIN - Headpat Slut quirk
+		// BLUEMOON EDIT BEGIN - Headpat Slut quirk
 		if(HAS_TRAIT(src, TRAIT_HEADPAT_SLUT))
 			// Display messages to participants
 			to_chat(helper, span_purple("[src] seems to be enjoying the head patting way more than normal..."))
@@ -382,7 +382,7 @@
 					// Induce helplessness
 					Stun(5)
 
-			// SPLURT EDIT END
+			// BLUEMOON EDIT END
 
 	else if ((helper.zone_selected == BODY_ZONE_PRECISE_GROIN) && !isnull(src.get_organ_by_type(/obj/item/organ/external/tail)))
 		helper.visible_message(span_notice("[helper] pulls on [src]'s tail!"), \
@@ -391,7 +391,7 @@
 		to_chat(src, span_notice("[helper] pulls on your tail!"))
 		if(HAS_TRAIT(src, TRAIT_BADTOUCH)) //How dare they!
 			to_chat(helper, span_warning("[src] makes a grumbling noise as you pull on [p_their()] tail."))
-			src.badtouch_retaliate(helper) // SPLURT EDIT - Distant
+			src.badtouch_retaliate(helper) // BLUEMOON EDIT - Distant
 		else
 			add_mood_event("tailpulled", /datum/mood_event/tailpulled)
 
@@ -461,7 +461,7 @@
 
 		if(HAS_TRAIT(src, TRAIT_BADTOUCH))
 			to_chat(helper, span_warning("[src] looks visibly upset as you hug [p_them()]."))
-			src.badtouch_retaliate(helper) // SPLURT EDIT - Distant
+			src.badtouch_retaliate(helper) // BLUEMOON EDIT - Distant
 
 	SEND_SIGNAL(src, COMSIG_CARBON_HELP_ACT, helper)
 	SEND_SIGNAL(helper, COMSIG_CARBON_HELPED, src)

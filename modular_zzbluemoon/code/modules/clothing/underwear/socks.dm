@@ -23,6 +23,7 @@
 		return
 	var/mob/living/carbon/human/human = user
 	human.socks = "Nude"
+
 /**
  * Do not declare new shirt or bra objects directly through typepaths, use SHIRT_OBJECT(class)/BRA_OBJECT(class) instead
  * Example:

@@ -110,7 +110,7 @@
 			if(person_contents == human_sent.shoes)
 				continue
 
-			// SPLURT EDIT - Extra inventory - and underwear
+			// BLUEMOON EDIT - Extra inventory - and underwear
 			if(person_contents == human_sent.w_underwear)
 				continue
 			if(person_contents == human_sent.w_socks)
@@ -121,7 +121,7 @@
 				continue
 			if(person_contents == human_sent.wrists) // once wrists actually have a danger item, you have my blessing to remove
 				continue
-			// SPLURT EDIT END
+			// BLUEMOON EDIT END
 
 		var/unequipped = person_sent.temporarilyRemoveItemFromInventory(person_contents)
 		if (!unequipped)
@@ -260,7 +260,7 @@
 			if(belonging == human_victim.shoes)
 				continue
 
-			// SPLURT EDIT - Extra inventory - and underwear
+			// BLUEMOON EDIT - Extra inventory - and underwear
 			if(belonging == human_victim.w_underwear)
 				continue
 			if(belonging == human_victim.w_socks)
@@ -271,7 +271,7 @@
 				continue
 			if(belonging == human_victim.wrists) // once wrists actually have a danger item, you have my blessing to remove
 				continue
-			// SPLURT EDIT END
+			// BLUEMOON EDIT END
 		belonging.forceMove(dropoff_location)
 
 	for(var/obj/item/item in victim_belongings)

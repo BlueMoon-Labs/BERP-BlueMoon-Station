@@ -99,7 +99,7 @@
 		"wear_id" = /obj/item/changeling/id,
 		"s_store" = /obj/item/changeling,
 
-		// SPLURT EDIT - Extra inventory
+		// BLUEMOON EDIT - Extra inventory
 		"w_underwear" = /obj/item/changeling,
 		"w_socks" = /obj/item/changeling,
 		"w_shirt" = /obj/item/changeling,
@@ -812,11 +812,11 @@
 		"belt" = ITEM_SLOT_BELT,
 		"gloves" = ITEM_SLOT_GLOVES,
 		"glasses" = ITEM_SLOT_EYES,
-		"ears" = ITEM_SLOT_EARS_LEFT, // SPLURT EDIT - Extra inventory
+		"ears" = ITEM_SLOT_EARS_LEFT, // BLUEMOON EDIT - Extra inventory
 		"wear_id" = ITEM_SLOT_ID,
 		"s_store" = ITEM_SLOT_SUITSTORE,
 
-		// SPLURT EDIT - Extra inventory
+		// BLUEMOON EDIT - Extra inventory
 		"w_underwear" = ITEM_SLOT_UNDERWEAR,
 		"w_socks" = ITEM_SLOT_SOCKS,
 		"w_shirt" = ITEM_SLOT_SHIRT,

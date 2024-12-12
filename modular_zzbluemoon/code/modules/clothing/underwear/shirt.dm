@@ -61,6 +61,7 @@ SHIRT_OBJECT(test)
 	gender = MALE
 	body_parts_covered = CHEST | ARMS
 	...
+
 BRA_OBJECT(test)
 	name = "test bra"
 	icon_state = "test"

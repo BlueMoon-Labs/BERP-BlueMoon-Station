@@ -272,12 +272,12 @@
 	//If they're a human, and they're not in help intent, block pushing
 	if(ishuman(M))
 		var/mob/living/carbon/human/human = M
-		//SPLURT EDIT START
+		// BLUEMOON EDIT START
 		/*
 		if(human.combat_mode)
 		*/
 		if(human.combat_mode != INTENT_HELP)
-		//SPLURT EDIT END
+		// BLUEMOON EDIT END
 			return TRUE
 	//if they are a cyborg, and they're alive and in combat mode, block pushing
 	if(iscyborg(M))
@@ -299,10 +299,10 @@
 
 	if(isliving(other))
 		var/mob/living/other_living = other
-		//SPLURT EDIT CHANGE BEGIN - Intents
+		// BLUEMOON EDIT CHANGE BEGIN - Intents
 		//their_combat_mode = other_living.combat_mode - ORIGINAL
 		their_combat_mode = other_living.combat_mode != INTENT_HELP
-		//SPLURT EDIT CHANGE END
+		// BLUEMOON EDIT CHANGE END
 		they_can_move = other_living.mobility_flags & MOBILITY_MOVE
 
 	var/too_strong = other.move_resist > move_force
@@ -316,10 +316,10 @@
 		return TRUE
 
 	// If we're in combat mode and not restrained we don't try to pass through people
-	//SPLURT EDIT CHANGE BEGIN - Intents
+	// BLUEMOON EDIT CHANGE BEGIN - Intents
 	//if (combat_mode && !HAS_TRAIT(src, TRAIT_RESTRAINED)) - ORIGINAL
 	if (combat_mode != INTENT_HELP && !HAS_TRAIT(src, TRAIT_RESTRAINED))
-	//SPLURT EDIT CHANGE END
+	// BLUEMOON EDIT CHANGE END
 		return FALSE
 
 	// Nor can we pass through non-restrained people in combat mode (or if they're restrained but still too strong for us)

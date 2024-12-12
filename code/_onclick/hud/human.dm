@@ -17,19 +17,19 @@
 	if(usr.hud_used.inventory_shown && targetmob.hud_used)
 		usr.hud_used.inventory_shown = FALSE
 		usr.client.screen -= targetmob.hud_used.toggleable_inventory
-		// SPLURT EDIT - Extra inventory
+		// BLUEMOON EDIT - Extra inventory
 		usr.client.screen -= targetmob.hud_used.extra_inventory
 		//
 	else
 		usr.hud_used.inventory_shown = TRUE
 		usr.client.screen += targetmob.hud_used.toggleable_inventory
-		// SPLURT EDIT - Extra inventory
+		// BLUEMOON EDIT - Extra inventory
 		if(usr.hud_used.extra_shown)
 			usr.client.screen += targetmob.hud_used.extra_inventory
 		//
 
 	targetmob.hud_used.hidden_inventory_update(usr)
-	// SPLURT EDIT - Extra inventory
+	// BLUEMOON EDIT - Extra inventory
 	targetmob.hud_used.extra_inventory_update(usr)
 	//
 
@@ -231,12 +231,12 @@
 	toggleable_inventory += inv_box
 
 	inv_box = new /atom/movable/screen/inventory(null, src)
-	inv_box.name = "left ear" // SPLURT EDIT - Extra inventory
+	inv_box.name = "left ear" // BLUEMOON EDIT - Extra inventory
 	inv_box.icon = ui_style
 	inv_box.icon_state = "ears"
 	inv_box.icon_full = "template"
 	inv_box.screen_loc = ui_ears
-	inv_box.slot_id = ITEM_SLOT_EARS_LEFT // SPLURT EDIT - Extra inventory
+	inv_box.slot_id = ITEM_SLOT_EARS_LEFT // BLUEMOON EDIT - Extra inventory
 	toggleable_inventory += inv_box
 
 	inv_box = new /atom/movable/screen/inventory(null, src)
@@ -349,7 +349,7 @@
 		/*if(human_mob.bodyshape & BODYSHAPE_DIGITIGRADE)
 			blocked_slots |= ITEM_SLOT_FEET*/ //BUBBER EDIT: Removal (Digi's can wear shoes here)
 
-	// SPLURT EDIT - Extra inventory
+	// BLUEMOON EDIT - Extra inventory
 	for(var/atom/movable/screen/inventory/inv in (static_inventory + toggleable_inventory + extra_inventory))
 		if(!inv.slot_id)
 			continue
