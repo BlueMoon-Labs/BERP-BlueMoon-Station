@@ -92,10 +92,10 @@ for code_file in scannable_files:
         if("~skyrat/" in code_file):
             dm_path = "~skyrat\\" + dm_path
         # SKYRAT EDIT END
-        # SPLURT EDIT START - Modular unit tests - guess
+        # BLUEMOON EDIT START - Modular unit tests - guess
         if("~bluemoon/" in code_file):
             dm_path = "~bluemoon\\" + dm_path
-        # SPLURT EDIT END
+        # BLUEMOON EDIT END
 
     included = f"#include \"{dm_path}\"" in lines
 

@@ -295,13 +295,13 @@
 #include "weird_food.dm"
 #include "wizard_loadout.dm"
 #include "worn_icons.dm"
+// BLUEMOON EDIT START
+#include "~bluemoon\underwear_items.dm"
+// BLUEMOON EDIT END
 // SKYRAT EDIT START
 #include "~skyrat\automapper.dm"
 #include "~skyrat\opposing_force.dm"
 // SKYRAT EDIT END
-// BLUEMOON EDIT START
-#include "~bluemoon\underwear_items.dm"
-// BLUEMOON EDIT END
 // END_INCLUDE
 #ifdef REFERENCE_TRACKING_DEBUG //Don't try and parse this file if ref tracking isn't turned on. IE: don't parse ref tracking please mr linter
 #include "find_reference_sanity.dm"
