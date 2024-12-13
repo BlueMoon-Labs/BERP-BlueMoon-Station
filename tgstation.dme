@@ -9461,6 +9461,7 @@
 #include "modular_zzbluemoon\code\datums\components\irradiated.dm"
 #include "modular_zzbluemoon\code\datums\components\crafting\crafting.dm"
 #include "modular_zzbluemoon\code\datums\components\crafting\equipment.dm"
+#include "modular_zzbluemoon\code\datums\components\music\boombox.dm"
 #include "modular_zzbluemoon\code\datums\elements\chapel_weakness.dm"
 #include "modular_zzbluemoon\code\datums\elements\flutter_move.dm"
 #include "modular_zzbluemoon\code\datums\elements\headpat.dm"
