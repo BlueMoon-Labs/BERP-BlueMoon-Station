@@ -1005,7 +1005,7 @@
 /obj/item/reagent_containers/cup/glass/trophy/gold_cup{
 	pixel_y = 13;
 	name = "#1 Nanotrasen Employees award";
-	desc = "Awarded to the best employees that survived yet another shift of Bubberstation 13."
+	desc = "Awarded to the best employees that survived yet another shift of BlueMoon."
 	},
 /turf/open/floor/wood/parquet,
 /area/shuttle/escape)

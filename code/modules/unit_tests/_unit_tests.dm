@@ -295,6 +295,9 @@
 #include "weird_food.dm"
 #include "wizard_loadout.dm"
 #include "worn_icons.dm"
+// BLUEMOON EDIT START
+#include "~bluemoon\underwear_items.dm"
+// BLUEMOON EDIT END
 // SKYRAT EDIT START
 #include "~skyrat\automapper.dm"
 #include "~skyrat\opposing_force.dm"

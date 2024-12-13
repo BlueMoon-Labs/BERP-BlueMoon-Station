@@ -1,6 +1,7 @@
 {
 	"version": "0.2.0",
 	"configurations": [
+
 		{
 			"type": "byond",
 			"request": "launch",
@@ -13,6 +14,13 @@
 			"request": "launch",
 			"name": "Launch DreamSeeker (low memory mode)",
 			"preLaunchTask": "Build All (low memory mode)",
+			"dmb": "${workspaceFolder}/${command:CurrentDMB}"
+		},
+		{
+			"type": "byond",
+			"request": "launch",
+			"name": "Launch DreamSeeker (TESTING)",
+			"preLaunchTask": "Build All (TESTING)",
 			"dmb": "${workspaceFolder}/${command:CurrentDMB}"
 		},
 		{

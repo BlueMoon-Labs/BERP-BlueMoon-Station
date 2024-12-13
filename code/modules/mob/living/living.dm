@@ -220,6 +220,13 @@
 	if(moving_diagonally)//no mob swap during diagonal moves.
 		return TRUE
 
+	// BLUEMOON EDIT START - sizecode
+	//handle micro bumping on help intent
+	if(resolve_intent_name(combat_mode) == "help")
+		if(handle_micro_bump_helping(M))
+			return TRUE
+	// BLUEMOON EDIT END
+
 	if(!M.buckled && !M.has_buckled_mobs())
 		if(can_mobswap_with(M))
 			//switch our position with M
@@ -254,6 +261,10 @@
 	//not if he's not CANPUSH of course
 	if(!(M.status_flags & CANPUSH))
 		return TRUE
+	// BLUEMOON EDIT START - sizecode
+	if(handle_micro_bump_other(M))
+		return TRUE
+	// BLUEMOON EDITEND
 	if(isliving(M))
 		var/mob/living/L = M
 		if(HAS_TRAIT(L, TRAIT_PUSHIMMUNE))
@@ -261,7 +272,12 @@
 	//If they're a human, and they're not in help intent, block pushing
 	if(ishuman(M))
 		var/mob/living/carbon/human/human = M
+		// BLUEMOON EDIT START
+		/*
 		if(human.combat_mode)
+		*/
+		if(human.combat_mode != INTENT_HELP)
+		// BLUEMOON EDIT END
 			return TRUE
 	//if they are a cyborg, and they're alive and in combat mode, block pushing
 	if(iscyborg(M))
@@ -283,7 +299,10 @@
 
 	if(isliving(other))
 		var/mob/living/other_living = other
-		their_combat_mode = other_living.combat_mode
+		// BLUEMOON EDIT CHANGE BEGIN - Intents
+		//their_combat_mode = other_living.combat_mode - ORIGINAL
+		their_combat_mode = other_living.combat_mode != INTENT_HELP
+		// BLUEMOON EDIT CHANGE END
 		they_can_move = other_living.mobility_flags & MOBILITY_MOVE
 
 	var/too_strong = other.move_resist > move_force
@@ -297,7 +316,10 @@
 		return TRUE
 
 	// If we're in combat mode and not restrained we don't try to pass through people
-	if (combat_mode && !HAS_TRAIT(src, TRAIT_RESTRAINED))
+	// BLUEMOON EDIT CHANGE BEGIN - Intents
+	//if (combat_mode && !HAS_TRAIT(src, TRAIT_RESTRAINED)) - ORIGINAL
+	if (combat_mode != INTENT_HELP && !HAS_TRAIT(src, TRAIT_RESTRAINED))
+	// BLUEMOON EDIT CHANGE END
 		return FALSE
 
 	// Nor can we pass through non-restrained people in combat mode (or if they're restrained but still too strong for us)
@@ -2024,11 +2046,13 @@ GLOBAL_LIST_EMPTY(fire_appearances)
 		if(NAMEOF(src, body_position))
 			set_body_position(var_value)
 			. = TRUE
-		if(NAMEOF(src, current_size))
+		// BLUEMOON EDIT START: sizecode
+/*		if(NAMEOF(src, current_size))
 			if(var_value == 0) //prevents divisions of and by zero.
 				return FALSE
 			update_transform(var_value/current_size)
-			. = TRUE
+			. = TRUE */
+		// BLUEMOON EDIT END
 
 	if(!isnull(.))
 		datum_flags |= DF_VAR_EDITED

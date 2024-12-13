@@ -16,6 +16,7 @@ on_github = os.getenv("GITHUB_ACTIONS") == "true"
 defines_file = "code/__DEFINES/traits/declarations.dm"
 skyrat_defines_file = "code/__DEFINES/~skyrat_defines/traits/declarations.dm" # SKYRAT EDIT ADDITION
 bubber_defines_file = "code/__DEFINES/~~bubber_defines/traits/declarations.dm" # BUBBER EDIT ADDITION
+bluemoon_defines_file = "code/__DEFINES/~~~bluemoon_defines/traits/declarations.dm" # BLUEMOON EDIT ADDITION
 globalvars_file = "code/_globalvars/traits/_traits.dm"
 
 how_to_fix_message = f"Please ensure that all traits in the {defines_file} file are added in the {globalvars_file} file."
@@ -43,6 +44,12 @@ if not os.path.isfile(bubber_defines_file):
 	print(red(f"Could not find the bubber defines file '{bubber_defines_file}'!"))
 	sys.exit(1)
 # BUBBER EDIT ADDITION END
+
+# BLUEMOON EDIT ADDITION START
+if not os.path.isfile(bluemoon_defines_file):
+	print(red(f"Could not find the bluemoon defines file '{bluemoon_defines_file}'!"))
+	sys.exit(1)
+# BLUEMOON EDIT ADDITION END
 
 if not os.path.isfile(globalvars_file):
 	print(red(f"Could not find the globalvars file '{globalvars_file}'!"))
@@ -131,6 +138,33 @@ for potential_define in scannable_lines:
 	number_of_defines += 1
 	defines_to_search_for.append(match.group(2))
 # BUBBER EDIT ADDITION END
+
+# BLUEMOON EDIT ADDITION START
+scannable_lines = []
+with open(bluemoon_defines_file, 'r') as file:
+	reading = False
+
+	for line in file:
+		line = line.strip()
+
+		if line == "// BEGIN TRAIT DEFINES":
+			reading = True
+			continue
+		elif line == "// END TRAIT DEFINES":
+			break
+		elif not reading:
+			continue
+
+		scannable_lines.append(line)
+
+for potential_define in scannable_lines:
+	match = define_regex.match(potential_define)
+	if not match:
+		continue
+
+	number_of_defines += 1
+	defines_to_search_for.append(match.group(2))
+# BLUEMOON EDIT ADDITION END
 
 if number_of_defines == 0:
 	print(red("No defines found! This is likely an error."))

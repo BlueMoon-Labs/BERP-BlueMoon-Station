@@ -53,7 +53,7 @@ jobs:
           git config --local user.email "151680451+Bubberbot@users.noreply.github.com"
           git pull origin master
           git add html/changelogs
-          git commit -m "Bubberstation automatic changelog compile [ci skip]" -a || true
+          git commit -m "BlueMoon automatic changelog compile [ci skip]" -a || true
 
       - name: Generate App Token
         id: app-token-generation

@@ -61,6 +61,10 @@ with open(file_reference, 'r') as file:
         elif line == "// SKYRAT EDIT END":
             continue
         # SKYRAT EDIT END
+        # BLUEMOON EDIT START - Modular unit tests
+        elif line == "// BLUEMOON EDIT START" or line == "// BLUEMOON EDIT END":
+            continue
+        # BLUEMOON EDIT END
 
         lines.append(line)
 
@@ -88,6 +92,10 @@ for code_file in scannable_files:
         if("~skyrat/" in code_file):
             dm_path = "~skyrat\\" + dm_path
         # SKYRAT EDIT END
+        # BLUEMOON EDIT START - Modular unit tests - guess
+        if("~bluemoon/" in code_file):
+            dm_path = "~bluemoon\\" + dm_path
+        # BLUEMOON EDIT END
 
     included = f"#include \"{dm_path}\"" in lines
 

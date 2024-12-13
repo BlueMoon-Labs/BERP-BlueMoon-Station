@@ -416,6 +416,9 @@ ROUNDSTART_RACES shadekin
 ROUNDSTART_RACES lesser_abductor
 ROUNDSTART_RACES zombie
 
+## BLUEMOON RACES DOWN HERE
+ROUNDSTART_RACES arachnid
+
 ##-------------------------------------------------------------------------------------------
 
 ## Roundstart no-reset races

@@ -243,6 +243,7 @@ export const DmTarget = new Juke.Target({
     'interface/**',
     'modular_skyrat/**', ///SKYRAT EDIT ADDITION - Making the CBT work
     'modular_zubbers/**', ///BUBBER EDIT ADDITION - Making the CBT work
+    'modular_zzbluemoon/**', ///BLUEMOON EDIT ADDITION - Making the CBT work
     'sound/**',
     `${DME_NAME}.dme`,
     NamedVersionFile,

@@ -1,6 +1,6 @@
-## Bubberstation (TG Downstream)
+## BlueMoon Station
 
-[![CI Suite](https://github.com/Bubberstation/Bubberstation/actions/workflows/ci_suite.yml/badge.svg)](https://github.com/Bubberstation/Bubberstation/actions/workflows/ci_suite.yml)
+[![CI Suite](https://github.com/BlueMoon-Labs/BERP-BlueMoon-Station/actions/workflows/ci_suite.yml/badge.svg)](https://github.com/BlueMoon-Labs/BERP-BlueMoon-Station/actions/workflows/ci_suite.yml)
 
 [![resentment](.github/images/badges/built-with-resentment.svg)](.github/images/comics/131-bug-free.png) [![technical debt](.github/images/badges/contains-technical-debt.svg)](.github/images/comics/106-tech-debt-modified.png) [![forinfinityandbyond](.github/images/badges/made-in-byond.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 [![resentment](.github/images/badges/built-with-resentment.svg)](.github/images/comics/131-bug-free.png) [![technical debt](.github/images/badges/contains-technical-debt.svg)](.github/images/comics/106-tech-debt-modified.png) [![forinfinityandbyond](.github/images/badges/made-in-byond.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
@@ -9,14 +9,14 @@
 |---------------------------|------------------------------------------------|
 | Git / GitHub cheatsheet   | [https://www.notion.so/Git-GitHub-61bc81766b2e4c7d9a346db3078ce833](https://www.notion.so/Git-GitHub-61bc81766b2e4c7d9a346db3078ce833) |
 | Guide to Modularization   | [./modular_skyrat/readme.md](./modular_skyrat/readme.md) |
-| Website                   | [https://wiki.bubberstation.org/index.php?title=Main_Page](https://wiki.bubberstation.org/index.php?title=Main_Page) |
-| Code                      | [https://github.com/Bubberstation/Bubberstation](https://github.com/Bubberstation/Bubberstation) |
-| Wiki                      | [https://tgstation13.org/wiki/Main_Page](https://tgstation13.org/wiki/Main_Page) |
+| Website                   | [https://wiki.ss13-bluemoon.ru/](https://wiki.ss13-bluemoon.ru/) |
+| Code                      | [https://github.com/BlueMoon-Labs/BERP-BlueMoon-Station](https://github.com/BlueMoon-Labs/BERP-BlueMoon-Station) |
+| Wiki                      | [https://wiki.ss13-bluemoon.ru/](https://wiki.ss13-bluemoon.ru/) |
 | Codedocs                  | [https://skyrat-ss13.github.io/Skyrat-tg/](https://skyrat-ss13.github.io/Skyrat-tg/) |
-| Bubberstation Discord     | [https://discord.gg/x4CVEHy6u7](https://discord.gg/x4CVEHy6u7) |
+| BlueMoon Discord     | [https://discord.gg/e6pRWzMVMA](https://discord.gg/e6pRWzMVMA) |
 | Coderbus Discord          | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9) |
 
-This is Bubberstation's fork of TG. Originally forked from Skyrat.
+This is Bluemoon's fork of Bubberstation. Bubberstation forked from Skyrat.
 
 **Please note that this repository contains sexually explicit content and is not suitable for those under the age of 18.**
 
@@ -25,10 +25,16 @@ Space Station 13 is a paranoia-laden round-based roleplaying game set against th
 ## Contribution Rules and Guidelines
 
 **1. Do Not Be A Dick**
-- The Bubberstation main repository is maintained by and contributed to by volunteers and hobbiests. You are not entitled to our time and energy. We reserve the right to permanently remove anyone who does not show both our contributor's and maintainer's common decency.
-- Bubberstation does not operate a strict "goodboy" points system or have defined goals, and anyone is welcome to contribute to this project. That being said, the maintainers of this project are free to curate comments as seen fit to uphold a respectful environment.
+- The BlueMoon main repository is maintained by and contributed to by volunteers and hobbiests. You are not entitled to our time and energy. We reserve the right to permanently remove anyone who does not show both our contributor's and maintainer's common decency.
+- BlueMoon does not operate a strict "goodboy" points system or have defined goals, and anyone is welcome to contribute to this project. That being said, the maintainers of this project are free to curate comments as seen fit to uphold a respectful environment.
 
-**2. The Licensing is Non-negotiable**
+**2. Modularization Standards Will be Upheld**
+- This codebase is a active downstream to Bubberstation with frequent upstream merges.
+- Modularization must be strictly upheld for code stability. (Ask a maintainer if you have any questions!)
+- Basically, **try to edit Modular BlueMoon files first** Then // BLUEMOON EDIT comments on any core files (TG, Skyrat, or Bubberstation) for trackability.
+- This is a place for when more concrete guidelines are created.
+
+**3. The Licensing is Non-negotiable**
 - You are free to take, redistribute, modify, and readapt any code or commit found on this repository.
 - All code files are under **GNU AGPL V3**
 - All asset files (images and sound) are **CC-BY-SA 3.0** unless otherwise stated
