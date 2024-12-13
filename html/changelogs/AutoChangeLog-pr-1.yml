@@ -1,0 +1,14 @@
+author: "Phoenix4O4"
+delete-after: True
+changes:
+  - rscadd: "Ported quirks from Splurt. Some quirks are enabled, while others are pending refinement."
+  - rscadd: "Added barks from Splurt for enhanced player interaction."
+  - rscadd: "Introduced alternative job roles."
+  - rscadd: "Added mechanics for peeking, resizing, and heavyweight players."
+  - rscadd: "Implemented a new emote system."
+  - rscadd: "Added special intents and combat mode from Splurt."
+  - rscadd: "Added TGUI-based admin panel and player time tracking panel."
+  - qol: "Updated guidelines and replaced references with BlueMoon-specific links."
+  - code_imp: "Integrated foundational systems from Splurt into the build."
+  - refactor: "Adjusted various components to fit BlueMoon's framework."
+  - config: "Updated configuration for new systems."
