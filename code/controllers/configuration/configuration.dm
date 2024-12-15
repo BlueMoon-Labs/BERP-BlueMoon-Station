@@ -101,8 +101,10 @@
 		if(SSjob.initialized) // in case we're reloading from disk after initialization, wanna make sure the changes update in the ongoing shift
 			SSjob.load_jobs_from_config()
 
-	if(CONFIG_GET(flag/usewhitelist))
-		load_whitelist()
+	// BLUEMOON EDIT START: WHITELIST DB
+	//	if(CONFIG_GET(flag/usewhitelist))
+	//	load_whitelist()
+	// BLUEMOON EDIT END: WHITELIST DB
 
 	// SKYRAT EDIT ADDITION START
 	populate_interaction_instances()
