@@ -1,7 +1,7 @@
 /datum/preference/choiced/erp_status_extm
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
-	savefile_key = "erp_status_pref_nc"
+	savefile_key = "erp_status_pref_extm"
 
 /datum/preference/choiced/erp_status_extm/init_possible_values()
 	return list("Yes - Switch", "Yes - Dom", "Yes - Sub", "Yes", "Ask (L)OOC", "Check OOC Notes", "No")
@@ -31,7 +31,7 @@
 /datum/preference/choiced/erp_status_extmharm
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
-	savefile_key = "erp_status_pref_nc"
+	savefile_key = "erp_status_pref_extmharm"
 
 /datum/preference/choiced/erp_status_extmharm/init_possible_values()
 	return list("Yes - Switch", "Yes - Dom", "Yes - Sub", "Yes", "Ask (L)OOC", "Check OOC Notes", "No")
