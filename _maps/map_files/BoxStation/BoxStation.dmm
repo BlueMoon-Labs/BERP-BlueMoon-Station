@@ -36601,6 +36601,9 @@
 /mob/living/basic/pet/bumbles,
 /turf/open/floor/grass,
 /area/station/service/hydroponics)
+"eSp" = (
+/turf/open/floor/plating,
+/area/space/nearstation)
 "eSQ" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
@@ -112258,9 +112261,9 @@ xzh
 xzh
 xzh
 xzh
-uRx
-uRx
-uRx
+eSp
+eSp
+eSp
 xzh
 xzh
 alP
