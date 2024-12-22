@@ -4,6 +4,7 @@
 #define SINGAPORE_RELAY_ADDR "byond://singapore.bubberstation.org:3000"
 #define EU_RELAY_ADDR "byond://germany.bubberstation.org:3000"
 #define NO_RELAY_ADDR "byond://direct.bubberstation.org:3000"
+#define NO_RELAY_ADDR_BLUEMOON "byond://game.ss13-bluemoon.ru:7988" // BLUEMOON EDIT: NO RELAY
 
 #define US_EAST_RELAY "Connect to US-East (Virginia)"
 #define US_WEST_RELAY "Connect to US-West (Oregon)"
@@ -11,14 +12,18 @@
 #define SINGAPORE_RELAY "Connect to Singapore (Singapore)"
 #define EU_RELAY "Connect to Germany (Frankfurt)"
 #define NO_RELAY "No Relay (Direct Connect)"
+#define NO_RELAY_BLUEMOON "No Relay (Bluemoon Direct Connect)" // BLUEMOON EDIT: NO RELAY
 
 /client/verb/go2relay()
 	var/list/static/relays = list(
-		US_EAST_RELAY,
-		US_WEST_RELAY,
-		SYDNEY_RELAY,
-		EU_RELAY,
-		NO_RELAY,
+		// BLUEMOON EDIT START: NO RELAY
+		//US_EAST_RELAY,
+		//US_WEST_RELAY,
+		//SYDNEY_RELAY,
+		//EU_RELAY,
+		//NO_RELAY,
+		NO_RELAY_BLUEMOON,
+		// BLUEMOON EDIT END: NO RELAY
 	)
 	var/choice = tgui_input_list(usr, "Which relay do you wish to use?", "Relay Select", relays)
 	var/destination
@@ -35,6 +40,10 @@
 			destination = EU_RELAY_ADDR
 		if(NO_RELAY)
 			destination = NO_RELAY_ADDR
+		// BLUEMOON EDIT START: NO RELAY
+		if(NO_RELAY_BLUEMOON)
+			destination = NO_RELAY_ADDR_BLUEMOON
+		// BLUEMOON EDIT END: NO RELAY
 	if(destination)
 		usr << link(destination)
 		sleep(1 SECONDS)
@@ -48,6 +57,7 @@
 #undef SINGAPORE_RELAY_ADDR
 #undef EU_RELAY_ADDR
 #undef NO_RELAY_ADDR
+#undef NO_RELAY_ADDR_BLUEMOON // BLUEMOON EDIT: NO RELAY
 
 #undef US_EAST_RELAY
 #undef US_WEST_RELAY
@@ -55,3 +65,4 @@
 #undef SINGAPORE_RELAY
 #undef EU_RELAY
 #undef NO_RELAY
+#undef NO_RELAY_BLUEMOON // BLUEMOON EDIT: NO RELAY
