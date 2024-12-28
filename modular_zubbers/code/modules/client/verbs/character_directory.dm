@@ -192,6 +192,10 @@ GLOBAL_DATUM(character_directory, /datum/character_directory)
 		var/vore = "Ask"
 		var/hypno = "Ask"
 		var/noncon = "Ask"
+		// BLUEMOON EDIT START: INTERACTION PANEL
+		var/extreme = "Ask"
+		var/extremeharm = "Ask"
+		// BLUEMOON EDIT END: INTERACTION PANEL
 		var/character_ad = ""
 		var/exploitable = ""
 		var/ref = REF(mob)
@@ -233,6 +237,10 @@ GLOBAL_DATUM(character_directory, /datum/character_directory)
 		vore = READ_PREFS(mob, choiced/erp_status_v)
 		hypno = READ_PREFS(mob, choiced/erp_status_hypno)
 		noncon = READ_PREFS(mob, choiced/erp_status_nc)
+		// BLUEMOON EDIT START: INTERACTION PANEL
+		extreme = READ_PREFS(mob, choiced/erp_status_extm)
+		extremeharm = READ_PREFS(mob, choiced/erp_status_extmharm)
+		// BLUEMOON EDIT END: INTERACTION PANEL
 		character_ad = READ_PREFS(mob, text/character_ad)
 		ooc_notes = READ_PREFS(mob, text/ooc_notes)
 		//If the user is an antagonist or Observer, we want them to be able to see exploitables in the Directory.
@@ -254,6 +262,10 @@ GLOBAL_DATUM(character_directory, /datum/character_directory)
 			"vore" = vore,
 			"hypno" = hypno,
 			"noncon" = noncon,
+			// BLUEMOON EDIT START: INTERACTION PANEL
+			"extreme" = extreme,
+			"extremeharm" = extremeharm,
+			// BLUEMOON EDIT END: INTERACTION PANEL
 			"exploitable" = exploitable,
 			"character_ad" = character_ad,
 			"flavor_text" = flavor_text,
