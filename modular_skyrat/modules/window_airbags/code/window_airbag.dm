@@ -32,7 +32,7 @@
 /datum/element/airbag/proc/deploy_airbag(atom/movable/destroying_atom, damage_flag)
 	SIGNAL_HANDLER
 
-	new airbag_type(get_turf(destroying_atom))
+	//new airbag_type(get_turf(destroying_atom)) // BLUEMOON EDIT: temp fix for broken window
 
 /datum/element/airbag/proc/on_examine(datum/source, mob/user, list/examine_text)
 	SIGNAL_HANDLER
