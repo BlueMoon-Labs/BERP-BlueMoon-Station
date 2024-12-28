@@ -32,7 +32,7 @@
 /datum/element/airbag/proc/deploy_airbag(atom/movable/destroying_atom, damage_flag)
 	SIGNAL_HANDLER
 
-	new airbag_type(get_turf(destroying_atom)) // BLUEMOON EDIT: temp fix for broken window
+	new airbag_type(get_turf(destroying_atom))
 
 /datum/element/airbag/proc/on_examine(datum/source, mob/user, list/examine_text)
 	SIGNAL_HANDLER
@@ -111,7 +111,7 @@
 // Detonates the airbag, dropping the item and playing the sound.
 /obj/item/airbag/proc/bang()
 	var/obj/created_object = new drop_type(get_turf(src))
-	//playsound(src, bang_sound, 50, pressure_affected = FALSE)
+	//playsound(src, bang_sound, 50, pressure_affected = FALSE) // BLUEMOON EDIT: temp fix for broken window
 	do_smoke(1, 1, created_object, get_turf(src))
 	qdel(src)
 
